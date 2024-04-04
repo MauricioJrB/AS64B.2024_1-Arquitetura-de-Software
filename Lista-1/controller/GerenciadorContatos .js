@@ -10,13 +10,15 @@ class GerenciadorContatos {
     this.contatos.push(novoContato);
     this.notifyObservers();
   }
-  remover() {
+  remover(index) {
     if (this.contatos.length == 0) {
       console.log("Contato não encontrado!");
       return;
     }
-    this.contatos.pop();
-    this.notifyObservers();
+    else if (index > -1){
+      this.contatos.splice(this.contatos.indexOf(index), 1);
+      this.notifyObservers();
+    }
   }
   listar() {
     return this.contatos;

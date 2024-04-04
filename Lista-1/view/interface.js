@@ -69,8 +69,10 @@ function adicionarContato() {
 }
 
 function removerContato() {
-  gerenciador.remover();
-  menu();
+  rl.question("\nQual contato deseja excluir? ", function(index){
+    gerenciador.remover(index);
+    menu();
+  });
 }
 
 function listarContatos() {
