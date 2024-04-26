@@ -19,6 +19,9 @@ A classe GerenciadorContatos está aberta para extensão, permitindo adicionar n
 ## __DIP - Princípio da Inversão de Dependência__
 O GerenciadorContatos depende de abstrações, como a classe Observer, em vez de depender de implementações concretas. Isso facilita a extensibilidade do sistema e permite que diferentes tipos de observadores sejam adicionados sem modificar o código existente. <br>
 
+## __Diagrama UML__
+![Diagrama-UML](https://github.com/MauricioJrB/AS64B.2024_1-Arquitetura-de-Software/assets/127567339/8b418d8e-5b3a-4cd5-8f87-a48e29c7b70e)
+
 class Contato {
   - nome: string
   - telefone: string
